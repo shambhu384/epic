@@ -1,0 +1,72 @@
+
+
+body {
+    font-size: 11pt;
+    font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,'Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
+}
+
+
+main .container-fluid {
+    margin-top: 8px;
+}
+
+header .navbar{
+    box-shadow: 1px 1px 4px #e4e2e2;
+}
+
+.breadcrumb {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0.5rem 0rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #ffffff;
+    border-radius: .25rem;
+}
+
+#navbarTogglerDemo01 .dropdown-menu {
+    right: 0;
+    left: unset;
+}
+
+
+#sidebar > .card {
+    width: 10.5rem !important;
+}
+
+#sidebar > .card > .card-body {
+    min-height: 1px;
+    padding: .75rem !important;
+}
+
+#sidebar > .card-title {
+    margin-bottom: 0.55rem;
+}
+
+#sidebar > .card > .card-body > .card-text {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    font-size: 10pt !important;
+}
+
+.left-bar > ul {
+     margin-top: 1px !important;
+ }
+
+ .left-bar .list-group-item {
+     border:none;
+}
+
+ .list-group-item:hover {
+     background-color: #EBECF0;
+}
+
+.left-bar{
+    border-right: 1px solid #d8dcd8
+}
+
+ .list-group-item.active {
+    background-color: #EBECF0 !important;
+}

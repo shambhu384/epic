@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Investment index{% endblock %}
+
+{% block body %}
+    <h3>Investments</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>CreatedAt</th>
+                <th>Summary</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for investment in investments %}
+            <tr>
+                <td>{{ investment.name }}</td>
+                <td>{{ investment.createdAt ? investment.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ investment.summary }}</td>
+                <td>
+                    <a href="{{ path('investment_show', {'id': investment.id}) }}">show</a>
+                    <a href="{{ path('investment_edit', {'id': investment.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('investment_new') }}">Create new</a>
+{% endblock %}
